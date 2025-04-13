@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Employee Search</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif; margin: 40px;
+        }
+        .container { width: 80%;
+            max-width: 800px; margin: 0 auto;
+        }
+        .search-box { padding: 20px;
+            background-color: #f5f5f5; 
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        input[type="text"] { 
+            padding: 8px; 
+            width: 200px;
+        }
+        button {
+            padding: 8px 15px; 
+            background-color: #4CAF50; 
+            color: white;
+            border: none; 
+            cursor: pointer;
+        }
+        a.button {
+            padding: 8px 15px; 
+            background-color: #2196F3; 
+            color: white;
+            text-decoration: none; 
+            border-radius: 3px; 
+            margin-left: 10px;
+        }
+    </style>
+    </head>
+<body>
+    <div class="container">
+        <h1>Employee Directory</h1>
+        <div class="search-box">
+            <h3>Search Employee by ID</h3>
+            <form action="EmployeeServlet" method="get">
+                <input type="text" name="empId" placeholder="Enter Employee ID">
+                <button type="submit">Search</button>
+                <a href="EmployeeServlet" class="button">View All Employees</a>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
